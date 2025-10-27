@@ -29,7 +29,7 @@ Si varias tarifas coinciden en un rango de fechas, se aplica la de **mayor prior
 
 1. Clonar el repositorio:
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/frsanchezbravo/java-test.git
 2. Acceder a la nueva carpeta
    ```bash
    cd test-java

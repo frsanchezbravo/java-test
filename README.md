@@ -30,4 +30,21 @@ Si varias tarifas coinciden en un rango de fechas, se aplica la de **mayor prior
 1. Clonar el repositorio:
    ```bash
    git clone <repo-url>
+2. Acceder a la nueva carpeta
+   ```bash
    cd test-java
+3. Construir el proyecto con Maven
+   ```bash
+   mvn clean install
+4. Ejecutar la aplicación
+   ```bash
+   mvn spring-boot:run
+5. Acceder a la base de datos H2 (opcional)  
+   - URL: http://localhost:8080/h2-console
+   - JDBC URL: jdbc:h2:mem:testdb
+   - Usuario: sa
+   - Contraseña: (vacío) 
+6. Probar llamada 
+   http://localhost:8080/prices?productId=35455&brandId=1&applicationDate=2020-10-14T10:00  (Devuelve 200 ok)
+   http://localhost:8080/prices?productId=35455&brandId=1&applicationDate=2024-10-14T10:00  (Devuelve 404 not found)
+

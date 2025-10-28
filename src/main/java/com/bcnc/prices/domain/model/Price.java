@@ -1,8 +1,8 @@
-package com.bcnc.prices.dto;
+package com.bcnc.prices.domain.model;
 
 import java.time.LocalDateTime;
 
-public record PriceResponse(
+public record Price(
         Long productId,
         Long brandId,
         Long priceList,
